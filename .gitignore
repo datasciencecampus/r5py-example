@@ -1,0 +1,7 @@
+# virtual env
+.env
+.venv
+
+# other directories
+outputs/*
+!outputs/README.md
