@@ -98,8 +98,6 @@ The code, unless otherwise stated, is released under [the MIT Licence][mit].
 The documentation for this work is subject to [© Crown copyright][copyright]
 and is available under the terms of the [Open Government 3.0][ogl] licence.
 
-**TO BE UPDATE**
-
 [`r5py`]: https://r5py.readthedocs.io/en/stable/index.html
 [r5py Java installation]: https://r5py.readthedocs.io/en/stable/user-guide/installation/installation.html#java-development-kit
 [mit]: LICENCE
