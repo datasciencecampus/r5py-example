@@ -1,6 +1,6 @@
 <img src="https://github.com/datasciencecampus/awesome-campus/blob/master/ons_dsc_logo.png">
 
-<img src="https://img.shields.io/badge/repo%20status-in%20development%20(caution)-red" alt="Repository status is still in development (caution required)"/> <img src="https://img.shields.io/badge/purpose-demonstration%20only%20(caution)-red" alt="Repository status is still in development (caution required)"/>
+<img src="https://img.shields.io/badge/repo%20purpose-demonstration%20only%20(all contents)-red" alt="All contents of this repository is for demonstration purposes only."/>
 
 # `r5py-example`
 
@@ -74,9 +74,34 @@ _Optional:_ Install the pre-commit hooks:
 pre-commit install
 ```
 
-## Example
+## Example File
+
+The example is all self-contained within the notebook `r5py_example.ipynb`.
+
+To run the notebook, make sure you have followed the installation instructions
+above and have selected the correct kernel in the notebook to match the virtual
+environment created.
+
+You should then be able to follow the notebook from start to finish to see how
+to use `r5py` to calculate travel times and visualise the results.
+
+## Data Science Campus
+At the [Data Science Campus](https://datasciencecampus.ons.gov.uk/about-us/) we
+apply data science, and build skills, for public good across the UK and
+internationally. Get in touch with the Campus at
+[datasciencecampus@ons.gov.uk](datasciencecampus@ons.gov.uk).
+
+## Licence
+
+The code, unless otherwise stated, is released under [the MIT Licence][mit].
+
+The documentation for this work is subject to [© Crown copyright][copyright]
+and is available under the terms of the [Open Government 3.0][ogl] licence.
 
 **TO BE UPDATE**
 
 [`r5py`]: https://r5py.readthedocs.io/en/stable/index.html
 [r5py Java installation]: https://r5py.readthedocs.io/en/stable/user-guide/installation/installation.html#java-development-kit
+[mit]: LICENCE
+[copyright]: http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
+[ogl]: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
