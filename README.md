@@ -1,5 +1,8 @@
 <img src="https://github.com/datasciencecampus/awesome-campus/blob/master/ons_dsc_logo.png">
 
+<img src="https://img.shields.io/badge/repo%20status-in%20development%20(caution)-red" alt="Repository status is still in development (caution required)"/>
+<img src="https://img.shields.io/badge/purpose-demonstration%20only%20(caution)-red" alt="Repository status is still in development (caution required)"/>
+
 # `r5py-example`
 
 A repository demonstrating how to use the [`r5py`] python package for travel
