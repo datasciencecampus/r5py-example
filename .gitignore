@@ -5,3 +5,6 @@
 # other directories
 outputs/*
 !outputs/README.md
+
+# precommit lint
+.ruff_cache
