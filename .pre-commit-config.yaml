@@ -1,0 +1,42 @@
+repos:
+# exclude: ^vendor/
+
+# ---- Pre-commit hooks ---- : Standard hook library
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+  -   id: trailing-whitespace # strip out white spaces at end of lines
+  -   id: end-of-file-fixer # ensure newline present at end of file
+  -   id: check-yaml # checks yaml files for parseable syntax.
+  -   id: check-json # checks json files for parseable syntax
+  -   id: detect-private-key # detects the presence of private keys.
+  -   id: check-case-conflict # check for files that would conflict in case-insensitive file systems.
+  -   id: check-merge-conflict # check for files that contain merge conflict strings.
+
+# ----- Detect-secrets - Detects high entropy strings that are likely to be passwords.
+-   repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+    -   id: detect-secrets
+        exclude: package.lock.json
+
+  # ---- Ruff ---- A *very* fast formatter and linter.
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.7.1
+  hooks:
+    # Run the linter.
+    - id: ruff
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format
+
+# ----- nbstripout - remove content from notebooks
+- repo: https://github.com/kynan/nbstripout
+  rev: 0.7.1
+  hooks:
+    - id: nbstripout
+      name: nbstripout - Strip outputs from notebooks (auto-fixes)
+      args:
+        - --extra-keys
+        - "metadata.colab metadata.kernelspec cell.metadata.colab cell.metadata.executionInfo cell.metadata.id cell.metadata.outputId"
